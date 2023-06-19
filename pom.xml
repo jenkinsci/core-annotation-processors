@@ -10,6 +10,7 @@
   <artifactId>core-annotation-processors</artifactId>
   <version>${changelist}</version>
   <name>JSR-269 annotation processors for Jenkins core</name>
+  <url>https://github.com/jenkinsci/core-annotation-processors</url>
 
   <dependencies>
     <dependency>
@@ -29,7 +30,7 @@
     </dependency>
   </dependencies>
 
-  <scm>
+  <scm child.scm.connection.inherit.append.path="false" child.scm.developerConnection.inherit.append.path="false" child.scm.url.inherit.append.path="false">
     <connection>scm:git:https://github.com/jenkinsci/${project.artifactId}.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/${project.artifactId}.git</developerConnection>
     <url>https://github.com/jenkinsci/core-annotation-processors</url>
