@@ -23,8 +23,7 @@
  */
 package jenkins;
 
-import org.kohsuke.MetaInfServices;
-
+import java.util.Set;
 import javax.annotation.processing.AbstractProcessor;
 import javax.annotation.processing.Processor;
 import javax.annotation.processing.RoundEnvironment;
@@ -33,7 +32,7 @@ import javax.annotation.processing.SupportedSourceVersion;
 import javax.lang.model.SourceVersion;
 import javax.lang.model.element.TypeElement;
 import javax.tools.Diagnostic.Kind;
-import java.util.Set;
+import org.kohsuke.MetaInfServices;
 
 /**
  * Bogus implementation to work around MCOMPILER-97
